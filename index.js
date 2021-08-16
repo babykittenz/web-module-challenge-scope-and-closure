@@ -25,7 +25,7 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
 
 /*Task 1: counterMaker()
   
-  Study the code for counter1 and counter2, then answer the questions below.  
+  Study the code for counter1 and counter2, then answer the questions below.    
   
   1. What is the difference between counter1 and counter2?
   
