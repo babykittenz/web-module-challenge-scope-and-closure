@@ -128,7 +128,7 @@ function getInningScore(secondcb, secondnum) {
 
 }
 
-console.log(getInningScore(inning,6));
+console.log(getInningScore(inning,6))
 
 /* ⚾️⚾️⚾️ Task 5: scoreboard() ⚾️⚾️⚾️
 Use the scoreboard function below to do the following:
@@ -171,9 +171,18 @@ Use the scoreboard function below to do the following:
 ]  
   */
 
-function scoreboard(/* CODE HERE */) {
+function scoreboard( onecb, twocb, numberInnings) {
   /* CODE HERE */
+  const scoreArray = [];
+
+  for(let i = 0; i < numberInnings; i++){
+    scoreArray.push(twocb(onecb,i));
+  }
+  return scoreArray;
+
 }
+
+console.log(scoreboard(inning, getInningScore,9));
 
 
 
